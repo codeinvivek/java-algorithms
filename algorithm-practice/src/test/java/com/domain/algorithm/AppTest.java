@@ -1,4 +1,4 @@
-package com.domain.ds_practice;
+package com.domain.algorithm;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

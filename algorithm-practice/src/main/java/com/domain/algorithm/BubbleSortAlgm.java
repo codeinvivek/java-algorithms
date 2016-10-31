@@ -10,20 +10,20 @@ public class BubbleSortAlgm {
 	/**
 	 * sorts the list-to-be-sorted with bubble-sort algm
 	 * 
-	 * @param listToSort
+	 * @param arrayToSort
 	 * @return
 	 */
-	protected int[] getBubbleSortedList(int listToSort[]) {
+	protected int[] getBubbleSortedList(int arrayToSort[]) {
 
-		int arrLen = listToSort.length;
+		int arrLen = arrayToSort.length;
 		int k;
 		int resultArr[] = null;
 		for (int m = arrLen; m >= 0; m--) {
-			for (int i = 0; i < arrLen - 1; i++) {
+			for (int i = 0; i < m - 1; i++) {
 				k = i + 1;
-				if ((Integer) listToSort[i] > (Integer) listToSort[k]) {
+				if ((Integer) arrayToSort[i] > (Integer) arrayToSort[k]) {
 					// ..performs ascending sort
-					resultArr = swapListAscending(i, k, listToSort);
+					resultArr = swapListAscending(i, k, arrayToSort);
 				} else {
 					// ..call of swap in else, will sort descending
 				}
